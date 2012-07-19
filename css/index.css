@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;
+}
+body{
+	width:960px;
+	margin:0 auto;
+	font-size:12px;
+	}
+#top{
+	width:550px;
+	}
+#menu{
+	height:35px;
+	background: url(../images/bj.png) repeat-x;
+	font-size:14px;
+	text-decoration:none;
+	_margin-top:-3px;
+}
+#menu ul{
+	float:left;
+	position:relative;
+	top:8px;
+	left:28px;
+	_left:8px;
+}
+#menu li{
+	float:left;
+	list-style-type:none;
+	display:block;
+	margin:0px 11px;
+}
+#menu li a{
+	color:#EEEEEE;
+	font-weight:800;
+	}
+#menu li a:hover{
+	color:#FFFFFF;
+	}
+#content{
+	float:left;
+	}
+#content00 p{
+	width:600px;
+	margin:12 auto;
+	font-size:12px;
+}
+#con-z{
+	margin-top:5px;
+	float:left;
+	}
+.con1{
+	width:651px;
+	height:200px;
+	margin-top:7px;
+	}
+.conn{
+	float:left;
+	_margin-top:-3px;
+	width:649px;
+	border:1px #BDDAEA solid;
+}
+.img1 img{
+	float:left;
+	position:relative;
+	top:20px;
+	left:20px;
+}
+.img1{
+	float:left;
+	width:230px;
+	height:170px;
+	}
+
+.bt1,.bt2{
+	float:left;
+}
+.bt1 a,.bt2 a{
+	color:#2C2C2C;
+}
+.bt1 a:hover,.bt2 a:hover{
+	color:#0364A7;
+}
+.bt2{
+	height:483px;
+}
+.bt1 li,.bt2 li{
+	line-height:22px;
+	margin:3px 0px;
+	margin-left:25px;
+	color:#2C2C2C;
+}
+.bt2 li{
+	list-style-type: decimal;
+	margin-left:40px;
+}
+#dh{
+	clear:both;
+	background:url(../images/dh.png) repeat-x;
+	width:651px;
+	height:30px;
+	}
+.dh1{
+	color:#FFF;
+	font-size:12px;
+	position:relative;
+	left:30px;
+	top:7px;
+	}
+.dh2{
+	color:#FFF;
+	font-size:14px;
+	float:right;
+	position:relative;
+	right:8px;
+	top:6px;
+	_top:-11px;
+	}
+.dh2 a{
+	color:#FFFFFF;
+}
+#con-y{
+	width:300px;
+	margin-top:5px;
+	float:right;
+	}
+#subleft{
+	float:left;
+	margin-top:5px;
+	width:300px;
+	border:#CCC 1px solid;
+}
+#subcontent{
+	float:left;
+	margin-top:5px;
+	margin-left:5px;
+	width:650px;
+	height:auto!important;
+	height:550px;
+	min-height:550px;
+	border:#D8D9D9 1px solid;
+	background:#F8F8F8;
+}
+
+#con-y1{
+	float:right;
+	margin-left:7px;
+	margin-bottom:7px;
+	width:300px;
+	border:#CCC 1px solid;
+	}
+#con-y2{
+	float:right;
+	margin-left:7px;
+	margin-bottom:7px;
+	width:300px;
+	border:#CCC 1px solid;
+	}
+#dh-y{
+	background:url(../images/bj1.png) no-repeat;
+	border-bottom:#CCC 1px solid;
+	width:300px;
+	height:30px;
+
+	}
+#dh-y1{	
+	font-size:12px;
+	position:relative;
+	top:8px;
+	left:15px;
+	}
+#foot{
+	margin-top:5px;
+	float:left;
+	clear:both;
+	width:960px;
+	height:60px;
+	font-size:12px;
+	text-align:center;
+	border-top:#CCCCCC solid 1px;
+}
+#foot p{
+	margin-top:-60px;
+}
+
+
+#liuyan002xia {
+	float:left;
+	line-height: 35px;
+	text-align: center;
+	height: 35px;
+	width: 300px;
+	border-top: 1px solid #CCCCCC;
+}
+#liuyan002xia input {
+
+}
+
+.liuyan10 {
+	background-color: #DCDCDC;
+}
+
